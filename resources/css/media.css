@@ -1,0 +1,167 @@
+/* HEADER */
+
+@media only screen and (min-width: 769px) {
+  /* dont show mobile nav */
+  header.mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* remove the desktop nav and replace */
+  header.desktop {
+    display: none;
+  }
+
+  header.mobile nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+/* BANNER */
+@media only screen and (max-width: 768px) {
+
+  section.banner, section.information {
+    display: block;
+  }
+
+  section .figure {
+    width: 100%;
+    padding: 0;
+  }
+
+  section.banner .col2 {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+    margin: 2.0rem 1.0rem;
+  }
+
+  section.banner .col2 .info_tile {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* INFORMATION */
+@media only screen and (min-width: 769px) {
+  section.information .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  section.information .figure {
+    display: none;
+  }
+
+  section.information {
+    padding-bottom: 0;
+  }
+
+  section.information .col2 {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+    margin: 1.0rem;
+  }
+
+  section.information .col2 .info_tile {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0rem 0rem 2rem 0rem;
+    background-color: white;
+  }
+
+  section.information img {
+    min-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  section.information .desktop {
+    display: none;
+  }
+}
+
+/* THESIS */
+@media only screen and (max-width: 768px) {
+
+  section.thesis .desktop {
+    display: none;
+  }
+
+  #thesis.title h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+/* LEARNING */
+@media only screen and (max-width: 768px) {
+  section.learning {
+    padding: 0rem;
+  }
+
+  .learning_tile .text_container {
+    margin: 0.5rem 1.0rem;
+    background-color: lightgrey;
+    padding: 1.5rem 1.0rem;
+  }
+
+  section.learning h3 {
+    margin-bottom: 0;
+  }
+
+
+  #learning, section.learning {
+    background-color: white;
+  }
+
+  #learning {
+    margin-bottom: 1rem;
+  }
+
+  #learning h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  section.learning .container {
+    flex-flow: column nowrap;
+
+  }
+
+  .learning_tile {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 0rem;
+  }
+
+  section.learning img, section.learning p {
+    display: none;
+  }
+}
+
+/* FOOTER */
+@media only screen and (max-width: 768px) {
+  footer {
+    padding-bottom: 1.0rem;
+    border-top: none;
+  }
+
+  footer nav {
+    display: none;
+  }
+}
