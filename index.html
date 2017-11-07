@@ -4,10 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>Capstone</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="./cap-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/media.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
   </head>
 
   <body>
@@ -18,20 +20,20 @@
         <img src="./resources/images/ic-logo.svg" alt="logo">
         <span id="colmar">COLMAR</span>ACADEMY
       </div>
-      <nav>
+      <nav role="navigation">
         <ul>
-          <li><a href="#"></a>On campus</li>
-          <li><a href="#"></a>Online</li>
-          <li><a href="#"></a>Our Companies</li>
-          <li><a href="#"></a>Sign In</li>
+          <li><a href="#" role="link">On campus</a></li>
+          <li><a href="#" role="link">Online</a></li>
+          <li><a href="#" role="link">Our Companies</a></li>
+          <li><a href="#" role="link">Sign In</a></li>
         </ul>
       </nav>
     </header>
 
     <header class="mobile"> <!-- not shown in full screen //-->
-      <nav>
+      <nav role="navigation">
         <img src="./resources/images/ic-logo.svg" alt="The Colmar logo">
-        <i class="fa fa-mortar-board fa-2x"></i>
+        <img src="./resources/images/ic-on-campus.svg" alt="On Campus icon">
         <i class="fa fa-desktop fa-2x"></i>
         <i class="fa fa-user fa-2x"></i>
       </nav>
@@ -43,20 +45,20 @@
         <img src="./resources/images/banner.jpg" alt="Banner image showing students reading">
       </div>
 
-      <div class="col2">
-        <div class="info_tile">
+      <div class="col2" role="presentation">
+        <div class="banner_text">
           <h1>Learn something new everyday</h1>
           <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
-          <div class="button">
+          <button role="button">
             Start here
-          </div>
+          </button>
         </div>
       </div>
     </section>
 
     <!-- INFORMATION -->
     <section class="information">
-      <div class="figure">
+      <div class="figure desktop">
         <img src="./resources/images/information-main.jpg" alt="Man reading a book">
         <h2>It doesn't hurt to keep practising</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
@@ -64,33 +66,33 @@
       </div>
 
       <div class="col2">
-        <div class="info_tile tile_image_top">
-          <img src="./resources/images/information-orientation.jpg" alt="orientation" class="desktop">
-          <img src="./resources/images/information-orientation-mobile.jpg" alt="orientation" class="mobile">
+        <div class="info_tile tile_image_top" role="article">
+          <img src="./resources/images/information-orientation.jpg" alt="people walking" class="desktop">
+          <img src="./resources/images/information-orientation-mobile.jpg" alt="people walking" class="mobile">
           <div class="text_container">
             <h3>Orientation date</h3>
             <p>Tue 10/11 &amp; Wed 11/12: 8am-3pm</p>
-            <p class="link">Read more</p>
+            <p><a href="#" role="link">Read more</a></p>
           </div>
         </div>
 
-        <div class="info_tile">
-          <img src="./resources/images/information-campus.jpg" alt="campus" class="desktop">
-          <img src="./resources/images/information-campus-mobile.jpg" alt="campus" class="mobile">
+        <div class="info_tile" role="article">
+          <img src="./resources/images/information-campus.jpg" alt="a lecture room" class="desktop">
+          <img src="./resources/images/information-campus-mobile.jpg" alt="a lecture room" class="mobile">
           <div class="text_container">
             <h3>Our Campus</h3>
             <p>Find which campus is close to you.</p>
-            <p class="link">Read more</p>
+            <p><a href="#" role="link">Read more</a></p>
           </div>
         </div>
 
-        <div class="info_tile accent">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture" class="desktop">
-          <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture" class="mobile">
+        <div class="info_tile accent" role="article">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecturer" class="desktop">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecturer" class="mobile">
           <div class="text_container">
             <h3>Our Guest Lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment.</p>
-            <p class="link">Read more</p>
+            <p><a href="#" role="link">Read more</a></p>
           </div>
         </div>
 
@@ -103,78 +105,76 @@
     </div>
 
     <section class="learning accent">
-      <div class="container">
 
-        <div class="learning_tile">
-          <img src="./resources/images/course-software.jpg" alt="course-business">
+        <div class="learning_tile" role="article">
+          <img class="desktop" src="./resources/images/course-software.jpg" alt="course-business">
           <div class="text_container">
             <h3>Software engineering</h3>
-            <p>COURSES</p>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
 
-        <div class="learning_tile">
-          <img src="./resources/images/course-computer-art.jpg" alt="course-business">
+        <div class="learning_tile" role="article">
+          <img class="desktop" src="./resources/images/course-computer-art.jpg" alt="someone holding an iphone">
           <div class="text_container">
             <h3>Computer art</h3>
-            <p>COURSES</p>
-            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
           </div>
         </div>
 
-        <div class="learning_tile">
-          <img src="./resources/images/course-design.jpg" alt="course-business">
+        <div class="learning_tile" role="article">
+          <img class="desktop" src="./resources/images/course-design.jpg" alt="someone holding a camera">
           <div class="text_container">
             <h3>Design</h3>
-            <p>COURSES</p>
-            <p>User Experience Design, User Research, Visual Design</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
 
-        <div class="learning_tile">
-          <img src="./resources/images/course-data.jpg" alt="course-business">
+        <div class="learning_tile" role="article">
+          <img class="desktop" src="./resources/images/course-data.jpg" alt="an open laptop">
           <div class="text_container">
             <h3>Data</h3>
-            <p>COURSES</p>
-            <p>Data Science, Big data, SQL, Data Visualization</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Data Science, Big data, SQL, Data Visualization</p>
           </div>
         </div>
 
-        <div class="learning_tile">
-          <img src="./resources/images/course-business.jpg" alt="course-business">
+        <div class="learning_tile" role="article">
+          <img class="desktop" src="./resources/images/course-business.jpg" alt="a chess board">
           <div class="text_container">
             <h3>Business</h3>
-            <p>COURSES</p>
-            <p>Product decvelopment, business development, startup</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Product decvelopment, business development, startup</p>
           </div>
         </div>
 
-        <div class="learning_tile">
-          <img src="./resources/images/course-marketing.jpg" alt="course-business">
+        <div class="learning_tile" role="article">
+          <img class="desktop" src="./resources/images/course-marketing.jpg" alt="an apple watch">
           <div class="text_container">
             <h3>Marketing</h3>
-            <p>COURSES</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
 
-      </div>
     </section>
 
-    <!-- EXHIBIT -->
+    <!-- THESIS -->
     <div id="thesis" class="title">
       <h2>Thesis exhibits</h2>
     </div>
 
     <section class="thesis">
 
-        <div class="figure">
+        <div class="figure" role="figure">
           <video alt="A video showing the exhibit" autoplay>
             <source src="./resources/videos/thesis.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <div class="desktop">
+          <div class="desktop" role="note">
             <h3>Reimagine urban</h3>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
@@ -182,7 +182,7 @@
 
         <div class="col2 desktop">
 
-          <div class="info_tile accent tile_top">
+          <div class="info_tile accent tile_top"  role="article">
             <img src="./resources/images/information-orientation.jpg" alt="orientation">
             <div class="text_container">
               <h3>Fisma: Design and Prototype</h3>
@@ -190,7 +190,7 @@
             </div>
           </div>
 
-          <div class="info_tile">
+          <div class="info_tile" role="article">
             <img src="./resources/images/information-campus.jpg" alt="campus">
             <div class="text_container">
               <h3>Now and then</h3>
@@ -208,10 +208,10 @@
       <div class="notice txt">
         &copy; 2016 Colmar Academy: All rights reserved
       </div>
-      <nav>
+      <nav class="desktop" role="navigation">
         <ul>
-          <li class="txt">Terms</li>
-          <li class="txt">Privacy</li>
+          <li class="txt" role="link">Terms</li>
+          <li class="txt" role="link">Privacy</li>
         </ul>
       </nav>
     </footer>

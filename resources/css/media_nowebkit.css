@@ -9,15 +9,9 @@
 
   /* mobile nav */
   header.mobile nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     color: black;
     width: 100%;
     padding: 0 1.5rem;
@@ -34,14 +28,11 @@
   }
 
   .col2 {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     max-width: 100%;
     padding: 0;
   }
 
-  section.banner .figure {max-width: none;}
   section.banner .col2 {margin: 2.0rem 1.0rem;}
   section.information .col2 {margin: 1.0rem;}
   section.information {padding-bottom: 0;}
